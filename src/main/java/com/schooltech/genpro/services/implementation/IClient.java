@@ -21,4 +21,9 @@ public class IClient implements ClientService {
     public List<Client> getAllClients() {
         return this.clientRepo.findAll();
     }
+
+    @Override
+    public Client getClient(Long code_client) {
+        return clientRepo.findById(code_client).orElse(null);
+    }
 }
