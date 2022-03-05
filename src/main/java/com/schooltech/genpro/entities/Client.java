@@ -57,5 +57,9 @@ public class Client implements Serializable {
     public void setContract(Contract contract){
         this.contract=contract;
     }
+
+    public String myName(){
+        return "abdoulaye";
+    }
     
 }
